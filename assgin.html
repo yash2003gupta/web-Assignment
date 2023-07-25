@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   
+   
+    <title>Assignment2</title>
+    <style>
+
+body{
+    padding:0px;
+    margin:0px;
+}
+nav{
+    background-color: rgb(24,22,22);
+    height:fit-content;
+    color: aqua;
+    display: flexbox;
+    flex-direction: row;
+}
+#nav-items{
+    list-style:none;
+    display:flexbox;
+    float:right;
+    margin-right:100 px;
+    position:relative;
+    left:-10px;
+}
+#logo{
+    width:100px;
+    height:100px;
+    margin:10px;
+}
+#card{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    width:30%;
+    border:1px solid grey;
+    position:relative;
+    right:-450px;
+    flex-direction:column;
+    height:200px;
+    padding:-20px;
+}
+#product-image{
+    width:150px;
+    height:150px;
+    position:relative;
+    top:20px;
+    margin:10px;
+}
+footer{
+    position:absolute;
+    bottom:0px;
+    background-color:rgb(24,22,22);
+    heigth:50px;
+    color:aliceblue;
+    width:100%;
+}
+#footer-content{
+    position:relative;
+    top:50%;
+    left:40%;
+}
+    </style>
+</head>
+<body>
+<header>
+    <nav><img id="logo" src ="https://economictimes.indiatimes.com/thumb/msid-59738992,width-640,height-480,resizemode-75,imgsize-25499/amazon.jpg"/>
+        <ul id ="nav-items">
+        <li> home </li>
+        <li> about us </li>
+        <li> contact us </li>
+        </ul>
+       
+
+    </nav>
+</header>
+<div id = "card">
+    <img id ="product -image" src="data:image/jpeg;base64,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"/>
+    <div id = "card-info"><h2> NEW SALE </h2>
+    <p> New Phillips trimmer get on chipper rate .
+     
+         </p>
+    
+    <h3> $20 </h3>
+    </div>
+</div>
+<footer> <div id ="footer content">email: yash2399.be21@chitkara.edu.in</div></footer>
+    
+</body>
+</html>
